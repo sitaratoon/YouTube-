@@ -27,7 +27,7 @@ class Config(object):
     API_HASH = os.environ.get("API_HASH", "c163d4e28e63196c3806cf3b9b2885de")
 
     # Authorized user ids to use this bot
-    AUTH_USERS = set(int(x) for x in os.environ.get("AUTH_USERS", "").split())
+    AUTH_USERS = set(int(x) for x in os.environ.get("AUTH_USERS", "-1002355394644").split())
 
     # proxy for accessing youtube-dl in GeoRestricted Areas
     # Get your own proxy from https://github.com/rg3/youtube-dl/issues/1091#issuecomment-230163061
